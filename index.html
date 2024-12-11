@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">PORTFOLIO</div>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates/Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="follow">
+      <a href="https://x.com/home?lang=en"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/"><i class="fab fa-github"></i></a>
+    </div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </header>
+
+  <section class="home" id="home">
+    <div class="image">
+      <img src="C:\Users\KSHITIJ\OneDrive\Desktop\Web  Tech Lab\Project\WhatsApp Image 2024-05-15 at 12.09.18 AM.jpeg">
+    </div>
+    <div class="content">
+      <h3>Hi, I am Kshitij</h3>
+      <span>Computer Science Student</span>
+      <p>Learning at Jaypee University of Information and Technology Waknaghat Solan, H.P.</p>
+      <a href="#about" class="btn">About Me</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="heading"><span>Biography</span></h2>
+    <p>I have been pursuing my BTech graduation from Jaypee University of Information and Technology Waknaghat Distt Solan. My hobbies include drawing, and I have a keen interest in sports such as basketball, badminton, chess, volleyball and cricket. I want to go into the data analyst field as I am very interested in pursuing this domain.</p>
+    <div class="biography">
+      <div class="bio"><h3>Name: <span>KSHITIJ</span></h3></div>
+      <div class="bio"><h3>Email: <span>kshitijrana@gmail.com</span></h3></div>
+      <div class="bio"><h3>Phone: <span>7876589915</span></h3></div>
+      <div class="bio"><h3>Address: <span>Baijnath Distt.Kangra, H.P.</span></h3></div>
+      <div class="bio"><h3>Age: <span>20 years</span></h3></div>
+      <a href="C:\Users\KSHITIJ\OneDrive\Desktop\Web  Tech Lab\Project\Kshitij's Resume.pdf"class="btn">Download CV</a>
+    </div>
+
+    <h2 class="heading"><span>Skills</span></h2>
+    <div class="skills">
+      <div class="progress">
+        <div class="bar">
+          <h3>HTML <span>90%</span></h3>
+        </div>
+        <div class="bar">
+          <h3>CSS <span>80%</span></h3>
+        </div>
+        <div class="bar">
+          <h3>JAVASCRIPT <span>75%</span></h3>
+        </div>
+        <div class="bar">
+          <h3>PHP <span>70%</span></h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+ <<section class="edu-exp" id="education">
+    <h1 class="heading" data-aos="fade-up"><span>Education</span></h1>
+    <div class="row">
+      <div class="box-container">
+        <div class="box" data-aos="fade-right">
+          <span>(2019-2020)</span>
+          <h3>Class 10th</h3>
+          <p>Mount Carmel School Baijnath Distt Kangra, H.P.</p>
+        </div>
+        <div class="box" data-aos="fade-right">
+          <span>(2021-2022)</span>
+          <h3>Class 12th</h3>
+          <p>The Gurukul Nilokheri, Haryana</p>
+        </div>
+        <div class="box" data-aos="fade-right">
+          <span>(2022-2026)</span>
+          <h3>Btech Graduation</h3>
+          <p>Jaypee University of Information and Technology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+ <section class="certificates" id="certificates">
+    <h1 class="heading" data-aos="fade-up"><span>Certificates/Awards</span></h1>
+    <div class="box-container">
+      <div class="box" data-aos="zoom-in">
+        <h3>Class 10th</h3>
+        <p> 1. Best Volunteer Award for Global Cancer Concern</p>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <h3>Class 12th</h3>
+        <p> 1. International Mathematical Olympiad</p>
+      </div>
+      <div class="box" data-aos="zoom-in">
+        <h3>Btech Graduation</h3>
+        <p> 1. Machine Learning Training Certificate of Completion Internshala Trainings</p>
+        <p> 2. Programming with C and C++ Training Certificate of Completion Internshala Trainings</p>
+      </div>
+    </div>
+  </section>
+
+
+<section class="contact" id="contact">
+  <h1 class="heading" data-aos="fade-up"><span>Contact</span></h1>
+  <form action="form.php" method="post">
+    <div class="flex">
+      <input data-aos="fade-right" type="text" name="name" placeholder="Enter your name" class="box" required>
+      <input data-aos="fade-left" type="email" name="email" placeholder="Enter your email" class="box" required>
+    </div>
+    <input data-aos="fade-up" type="number" min="0" name="number" placeholder="Enter your number" class="box" required>
+    <textarea data-aos="fade-up" name="message" class="box" required placeholder="Enter your message" cols="30" rows="10"></textarea>
+    <input type="submit" data-aos="zoom-in" value="Send Message" name="send" class="btn">
+  </form>
+  <div class="box-container">
+    <div class="box" data-aos="zoom-in">
+      <i class="fas fa-phone"></i>
+      <h3>Phone</h3>
+      <p>7876589915</p>
+    </div>
+    <div class="box" data-aos="zoom-in">
+      <i class="fas fa-envelope"></i>
+      <h3>Email</h3>
+      <p>kshitijrana@gmail.com</p>
+    </div>
+    <div class="box" data-aos="zoom-in">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Address</h3>
+      <p>Baijnath Kangra, 176125</p>
+    </div>
+  </div>
+</section>
+
+
+  <div class="credit">&copy; copyright @ <span>Mr. Kshitij</span></div>
+<form action="stu.php" method="post">
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      document.body.classList.toggle('active');
+      document.querySelector('.header').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
