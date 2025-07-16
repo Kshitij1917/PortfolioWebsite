@@ -1,161 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kshitij | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
 
-  <header class="header">
-    <div class="logo">PORTFOLIO</div>
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#certificates">Certificates/Awards</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="follow">
-      <a href="https://x.com/home?lang=en"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/"><i class="fab fa-github"></i></a>
-    </div>
-    <div id="menu-btn" class="fas fa-bars"></div>
-  </header>
+<i id="theme-toggle" class="fas fa-moon"></i>
 
-  <section class="home" id="home">
-    <div class="image">
-      <img src="C:\Users\KSHITIJ\OneDrive\Desktop\Web  Tech Lab\Project\WhatsApp Image 2024-05-15 at 12.09.18 AM.jpeg">
+<canvas id="bg-canvas"></canvas>
+
+<header class="header">
+  <div class="logo">KR</div>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="follow">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+  </div>
+  <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+
+<section class="home" id="home">
+  <div class="home-container">
+    <div class="image-container">
+      <img src="photo1.jpeg" alt="Kshitij" />
     </div>
     <div class="content">
-      <h3>Hi, I am Kshitij</h3>
-      <span>Computer Science Student</span>
-      <p>Learning at Jaypee University of Information and Technology Waknaghat Solan, H.P.</p>
-      <a href="#about" class="btn">About Me</a>
-    </div>
-  </section>
+      <h3>Hello, I'm <span class="yellow-highlight">Kshitij</span></h3>
+      <span class="typing"></span>
+      <p>A Computer Science student pursuing BTech at JUIT and passionate about full stack development, AI/ML and cybersecurity.</p>
 
-  <section class="about" id="about">
-    <h2 class="heading"><span>Biography</span></h2>
-    <p>I have been pursuing my BTech graduation from Jaypee University of Information and Technology Waknaghat Distt Solan. My hobbies include drawing, and I have a keen interest in sports such as basketball, badminton, chess, volleyball and cricket. I want to go into the data analyst field as I am very interested in pursuing this domain.</p>
-    <div class="biography">
-      <div class="bio"><h3>Name: <span>KSHITIJ</span></h3></div>
-      <div class="bio"><h3>Email: <span>kshitijrana@gmail.com</span></h3></div>
-      <div class="bio"><h3>Phone: <span>7876589915</span></h3></div>
-      <div class="bio"><h3>Address: <span>Baijnath Distt.Kangra, H.P.</span></h3></div>
-      <div class="bio"><h3>Age: <span>20 years</span></h3></div>
-      <a href="C:\Users\KSHITIJ\OneDrive\Desktop\Web  Tech Lab\Project\Kshitij's Resume.pdf"class="btn">Download CV</a>
-    </div>
+<div class="resume-download">
+  <a href="https://drive.google.com/file/d/1nBkTHgYLJ3VbY5Hh9eQq7jq5qTiMIvNY/view?usp=sharing" class="btn" download target="_blank">
+    <i class="fas fa-download"></i> Download CV
+  </a>
+</div>
 
-    <h2 class="heading"><span>Skills</span></h2>
-    <div class="skills">
-      <div class="progress">
-        <div class="bar">
-          <h3>HTML <span>90%</span></h3>
-        </div>
-        <div class="bar">
-          <h3>CSS <span>80%</span></h3>
-        </div>
-        <div class="bar">
-          <h3>JAVASCRIPT <span>75%</span></h3>
-        </div>
-        <div class="bar">
-          <h3>PHP <span>70%</span></h3>
-        </div>
+</div> <!-- closing content -->
+</div> <!-- closing home-container -->
+</section>
+
+<section class="skills" id="skills" data-aos="fade-up">
+  <h1 class="heading"><span>Skills</span></h1>
+  <div class="skills-grid">
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fab fa-html5"></i>
+        <h3>HTML <span>95%</span></h3>
       </div>
+      <div class="progress-bar"><div style="width: 95%;"></div></div>
     </div>
-  </section>
 
- 
-
- <<section class="edu-exp" id="education">
-    <h1 class="heading" data-aos="fade-up"><span>Education</span></h1>
-    <div class="row">
-      <div class="box-container">
-        <div class="box" data-aos="fade-right">
-          <span>(2019-2020)</span>
-          <h3>Class 10th</h3>
-          <p>Mount Carmel School Baijnath Distt Kangra, H.P.</p>
-        </div>
-        <div class="box" data-aos="fade-right">
-          <span>(2021-2022)</span>
-          <h3>Class 12th</h3>
-          <p>The Gurukul Nilokheri, Haryana</p>
-        </div>
-        <div class="box" data-aos="fade-right">
-          <span>(2022-2026)</span>
-          <h3>Btech Graduation</h3>
-          <p>Jaypee University of Information and Technology</p>
-        </div>
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS <span>80%</span></h3>
       </div>
+      <div class="progress-bar"><div style="width: 80%;"></div></div>
     </div>
-  </section>
 
-
- 
-
- <section class="certificates" id="certificates">
-    <h1 class="heading" data-aos="fade-up"><span>Certificates/Awards</span></h1>
-    <div class="box-container">
-      <div class="box" data-aos="zoom-in">
-        <h3>Class 10th</h3>
-        <p> 1. Best Volunteer Award for Global Cancer Concern</p>
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript <span>75%</span></h3>
       </div>
-      <div class="box" data-aos="zoom-in">
-        <h3>Class 12th</h3>
-        <p> 1. International Mathematical Olympiad</p>
-      </div>
-      <div class="box" data-aos="zoom-in">
-        <h3>Btech Graduation</h3>
-        <p> 1. Machine Learning Training Certificate of Completion Internshala Trainings</p>
-        <p> 2. Programming with C and C++ Training Certificate of Completion Internshala Trainings</p>
-      </div>
+      <div class="progress-bar"><div style="width: 75%;"></div></div>
     </div>
-  </section>
 
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fab fa-php"></i>
+        <h3>PHP <span>70%</span></h3>
+      </div>
+      <div class="progress-bar"><div style="width: 70%;"></div></div>
+    </div>
 
-<section class="contact" id="contact">
-  <h1 class="heading" data-aos="fade-up"><span>Contact</span></h1>
-  <form action="form.php" method="post">
-    <div class="flex">
-      <input data-aos="fade-right" type="text" name="name" placeholder="Enter your name" class="box" required>
-      <input data-aos="fade-left" type="email" name="email" placeholder="Enter your email" class="box" required>
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fas fa-database"></i>
+        <h3>MySQL <span>65%</span></h3>
+      </div>
+      <div class="progress-bar"><div style="width: 65%;"></div></div>
     </div>
-    <input data-aos="fade-up" type="number" min="0" name="number" placeholder="Enter your number" class="box" required>
-    <textarea data-aos="fade-up" name="message" class="box" required placeholder="Enter your message" cols="30" rows="10"></textarea>
-    <input type="submit" data-aos="zoom-in" value="Send Message" name="send" class="btn">
-  </form>
-  <div class="box-container">
-    <div class="box" data-aos="zoom-in">
-      <i class="fas fa-phone"></i>
-      <h3>Phone</h3>
-      <p>7876589915</p>
+
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Cybersecurity <span>60%</span></h3>
+      </div>
+      <div class="progress-bar"><div style="width: 60%;"></div></div>
     </div>
-    <div class="box" data-aos="zoom-in">
-      <i class="fas fa-envelope"></i>
-      <h3>Email</h3>
-      <p>kshitijrana@gmail.com</p>
+
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fas fa-code"></i>
+        <h3>C / C++ <span>80%</span></h3>
+      </div>
+      <div class="progress-bar"><div style="width: 80%;"></div></div>
     </div>
-    <div class="box" data-aos="zoom-in">
-      <i class="fas fa-map-marker-alt"></i>
-      <h3>Address</h3>
-      <p>Baijnath Kangra, 176125</p>
+
+    <div class="skill-box">
+      <div class="skill-head">
+        <i class="fab fa-java"></i>
+        <h3>Java <span>50%</span></h3>
+      </div>
+      <div class="progress-bar"><div style="width: 50%;"></div></div>
     </div>
+
   </div>
 </section>
 
 
-  <div class="credit">&copy; copyright @ <span>Mr. Kshitij</span></div>
-<form action="stu.php" method="post">
-  <script>
-    document.getElementById('menu-btn').addEventListener('click', function() {
-      document.body.classList.toggle('active');
-      document.querySelector('.header').classList.toggle('active');
+<section class="edu-exp" id="education" data-aos="fade-up">
+  <h1 class="heading"><span>Education</span></h1>
+  <div class="row">
+    <div class="box-container">
+
+      <div class="box">
+        <img src="ed1.jpg" alt="Mount Carmel School" class="edu-img">
+        <span>(2019–2020)</span>
+        <h3>Class 10th</h3>
+        <p>Mount Carmel School Baijnath, H.P.</p>
+      </div>
+
+      <div class="box">
+        <img src="ed2.jpg" alt="The Gurukul Nilokheri" class="edu-img">
+        <span>(2021–2022)</span>
+        <h3>Class 12th</h3>
+        <p>The Gurukul Nilokheri, Haryana</p>
+      </div>
+
+      <div class="box">
+        <img src="ed3.jpg" alt="JUIT Logo" class="edu-img">
+        <span>(2022–2026)</span>
+        <h3>B.Tech Graduation</h3>
+        <p>Jaypee University of Information Technology</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <h2 class="heading"><span>Work Experience</span></h2>
+  <div class="timeline">
+
+    <!-- Experience 1 -->
+    <div class="exp-card">
+      <img src="e1.png" alt="Unified Mentor Logo" class="exp-img">
+      <h3>Full Stack Web Developer – Unified Mentor Pvt Ltd <span>(Remote · 2025–2026)</span></h3>
+      <p>Built full-stack web apps using HTML, CSS, JavaScript, Firebase, and deployed via Firebase Hosting. Integrated Firebase Auth & DB for real-time features.</p>
+      <a href="UM Offer letter.pdf" target="_blank" class="btn">View Offer Letter</a>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="exp-card">
+      <img src="e2.jpeg" alt="Tamizhan Skills Logo" class="exp-img">
+      <h3>Cybersecurity Intern – Tamizhan Skills <span>(Remote · 2025–2026)</span></h3>
+      <p>Hands-on penetration testing, vulnerability scanning, traffic analysis. Gained real-world experience with Metasploit, Wireshark, and Kali Linux tools.</p>
+      <a href="TS Offer Letter.jpg" target="_blank" class="btn">View Offer Letter</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2 class="heading"><span>Projects</span></h2>
+  <div class="project-grid">
+
+    <div class="project-box">
+      <img src="img1.jpeg" alt="CAD Detection Project" class="img">
+      <h3>Coronary Artery Disease Detection (AI)</h3>
+      <p>Used ML (XGBoost, Federated Learning) for disease prediction with 94% accuracy. Flask-based secure distributed model.</p>
+      <a href="https://github.com/Kshitij1917/Coronory-Artery-Disease-Detection-using-AI" target="_blank">GitHub ↗</a>
+    </div>
+
+    <div class="project-box">
+      <img src="img2.png" alt="Lost and Found DBMS Web App" class="img">
+      <h3>Lost and Found DBMS Web App</h3>
+      <p>Developed in Python, Java, MySQL for backend. Responsive HTML/CSS frontend with real-time item tracking.</p>
+      <a href="https://github.com/Kshitij1917/Lost-and-Found-DBMS-Project" target="_blank">GitHub ↗</a>
+    </div>
+
+    <div class="project-box">
+      <img src="img3.png" alt="Portfolio Website" class="img">
+      <h3>Portfolio Website</h3>
+      <p>Built this personal site using HTML, CSS, JS & PHP. Hosted online and mobile-friendly.</p>
+      <a href="https://github.com/Kshitij1917/PortfolioWebsite" target="_blank">GitHub ↗</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="certificates" id="certificates" data-aos="fade-up">
+  <h1 class="heading"><span>Certificates</span></h1>
+  <div class="box-container">
+
+    <!-- Certificate 1 -->
+    <div class="box">
+      <img src="c1.jpeg" alt="C/C++ Certificate" class="cert-img">
+      <h3>C/C++ Programming</h3>
+      <a href="https://trainings.internshala.com/view_certificate/dxui77y1jdz/4n5g9zjdxlx/" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="box">
+      <img src="c2.jpg" alt="Ethical Hacking Certificate" class="cert-img">
+      <h3>Ethical Hacking</h3>
+      <a href="https://trainings.internshala.com/view_certificate/5pstzhxu01w/4x0gkm9csym/" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="box">
+      <img src="c3.jpeg" alt="Digital Forensics Certificate" class="cert-img">
+      <h3>Digital Forensics Concepts</h3>
+      <a href="https://www.coursera.org/account/accomplishments/verify/MYHCJMV2Z3FE" target="_blank" class="btn">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="contact" id="contact" data-aos="fade-up">
+  <h1 class="heading"><span>Contact</span></h1>
+  <form action="form.php" method="post">
+    <div class="flex">
+      <input type="text" name="name" placeholder="Your name" class="box" required>
+      <input type="email" name="email" placeholder="Your email" class="box" required>
+    </div>
+    <input type="number" name="number" placeholder="Your phone number" class="box" required>
+    <textarea name="message" placeholder="Your message" class="box" rows="6" required></textarea>
+    <input type="submit" name="send" value="Send Message" class="btn">
+  </form>
+  <div class="box-container">
+    <div class="box"><i class="fas fa-phone"></i><h3>Phone</h3><p>7876589915</p></div>
+    <div class="box"><i class="fas fa-envelope"></i><h3>Email</h3><p>kshitijrana1917@gmail.com</p></div>
+    <div class="box"><i class="fas fa-map-marker-alt"></i><h3>Address</h3><p>Baijnath, Kangra, 176125</p></div>
+  </div>
+</section>
+
+<div class="credit">&copy; 2025 <span>Kshitij</span>. All Rights Reserved.</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  const particles = [];
+  for(let i = 0; i < 100; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 2 + 1,
+      dx: (Math.random() - 0.5) * 0.5,
+      dy: (Math.random() - 0.5) * 0.5
     });
-  </script>
-</body>
-</html>
+  }
+  function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for(let p of particles) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = '#ffcc0d';
+      ctx.fill();
+      p.x += p.dx;
+      p.y += p.dy;
+      if(p.x < 0 || p.x > canvas.width) p.dx *= -1;
+      if(p.y < 0 || p.y > canvas.height) p.dy *= -1;
+    }
+    requestAnimationFrame(animateParticles);
+  }
+  animateParticles();
+
+
